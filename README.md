@@ -1,2 +1,2 @@
-# RESONANCE-ontology
-RESONANCE ontology
+# Semantic Resource Interface - SRI
+RESONANCE Ontology
