@@ -9,4 +9,4 @@ Here are the ontology documentation pages:
 - [SRI4Building Ontology](RESONANCE-Ontology/docs/SRI4BUILDING.html)
 - [SRI4EV Ontology](RESONANCE-Ontology/docs/SRI4EV.html)
 - [SRI4PV Ontology](RESONANCE-Ontology/docs/SRI4PV.html)
-- [SRI4Heating Ontology](RESONANCE-Ontology/docs/SRI4WEATHER.html)
+- [SRI4Weather Ontology](RESONANCE-Ontology/docs/SRI4WEATHER.html)
