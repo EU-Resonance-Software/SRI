@@ -1,4 +1,4 @@
-@prefix : <https://w3id.org/resonance/sri4weather#> .
+@prefix : <https://w3id.org/resonance/SRI4Weather#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace#> .
@@ -9,17 +9,17 @@
 @prefix vann: <http://purl.org/vocab/vann#> .
 @prefix voaf: <http://purl.org/vocommons/voaf#> .
 @prefix dcterms: <http://purl.org/dc/terms#> .
-@prefix sri4weather: <https://w3id.org/resonance/sri4weather#> .
-@base <https://w3id.org/resonance/sri4weather#> .
+@prefix sri4weather: <https://w3id.org/resonance/SRI4Weather#> .
+@base <https://w3id.org/resonance/SRI4Weather#> .
 
-<https://w3id.org/resonance/sri4weather#> rdf:type owl:Ontology ;
-                                           owl:versionIRI <https://w3id.org/resonance/sri4weather-1.0#> ;
+<https://w3id.org/resonance/SRI4Weather#> rdf:type owl:Ontology ;
+                                           owl:versionIRI <https://w3id.org/resonance/SRI4Weather-1.0#> ;
                                            dcterms:created "2024-07-15"^^xsd:date ;
                                            dcterms:creator <https://www.resonance-project.eu/> , <https://www.linkedin.com/in/henon-lamboro/> ;
-                                           dcterms:issued "TBA"^^xsd:date ;
-                                           dcterms:license "TBA" ;
-                                           dcterms:modified "2024-07-15"^^xsd:date ;
-                                           dcterms:rights "TBA"@en ;
+                                           dcterms:issued "2025-07-15"^^xsd:date ;
+                                           dcterms:license "CC0-1.0" ;
+                                           dcterms:modified "2025-11-26"^^xsd:date ;
+                                           dcterms:rights "Copyright (c) RESONANCE Consortium"@en ;
                                            dcterms:title "Semantic Resorce Interface For Weather Ontology"@en ;
                                            dcterms:description: " "@en ;
                                            vann:preferredNamespacePrefix "sri4weather" ;
