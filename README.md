@@ -1,7 +1,6 @@
-# Semantic Resource Interface - SRI
-RESONANCE Ontology
+# Semantic Resource Interface
 
-# RESONANCE Ontology Documentation
+# RESONANCE Ontology Documentation read.
 
 Here are the ontology documentation pages:
 
