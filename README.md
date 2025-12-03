@@ -1,6 +1,6 @@
 # Semantic Resource Interface
 
-# RESONANCE Ontology Documentation read.
+# RESONANCE Ontology
 
 Here are the ontology documentation pages:
 
