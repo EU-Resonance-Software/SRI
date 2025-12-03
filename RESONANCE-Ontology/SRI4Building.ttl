@@ -1,4 +1,4 @@
-@prefix : <https://w3id.org/resonance/sri4building#> .
+@prefix : <https://w3id.org/resonance/SRI4Building#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace#> .
@@ -12,19 +12,19 @@
 @prefix saref: <https://saref.etsi.org/core/> .
 @prefix s4ener: <https://saref.etsi.org/saref4ener/> .
 @prefix dcterms: <http://purl.org/dc/terms#> .
-@prefix sri4building: <https://w3id.org/resonance/sri4building#> .
-@base <https://w3id.org/resonance/sri4building#> .
+@prefix sri4building: <https://w3id.org/resonance/SRI4Building#> .
+@base <https://w3id.org/resonance/SRI4Building#> .
 
-<https://w3id.org/resonance/sri4building#> rdf:type owl:Ontology ;
-                                            owl:versionIRI <https://w3id.org/resonance/sri4building-1.0#> ;
+<https://w3id.org/resonance/SRI4Building#> rdf:type owl:Ontology ;
+                                            owl:versionIRI <https://w3id.org/resonance/SRI4Building-1.0#> ;
                                             dcterms:created "2024-07-15"^^xsd:date ;
                                             dcterms:creator <https://www.resonance-project.eu/> , <https://www.linkedin.com/in/henon-lamboro/> ;
-                                            dcterms:issued "TBA"^^xsd:date ;
-                                            dcterms:license "TBA" ;
-                                            dcterms:modified "2024-07-15"^^xsd:date ;
-                                            dcterms:rights "TBA"@en ;
-                                            dcterms:title "Semantic Resorce Interface For Building Ontology"@en ;
-                                            dcterms:description: " "@en ;
+                                            dcterms:issued "2025-07-15"^^xsd:date ;
+                                            dcterms:license "CC0-1.0" ;
+                                            dcterms:modified "2025-11-26"^^xsd:date ;
+                                            dcterms:rights "Copyright (c) RESONANCE Consortium"@en ;
+                                            dcterms:title "Semantic Resource Interface for Building Ontology"@en ;
+                                            dcterms:description "The SRI4Building Ontology defines the core concepts, relationships, and attributes required to semantically describe buildings and their energy-related components within the Semantic Resource Interface (SRI) architecture. It enables interoperable representation of building assets, smart devices, energy systems, and contextual information to support monitoring, control, optimization, and demand-response services."@en ;
                                             vann:preferredNamespacePrefix "sri4building" ;
                                             vann:preferredNamespaceUri <https://w3id.org/resonance> ;
                                             rdfs:label "sri4building Ontology"@en ;
