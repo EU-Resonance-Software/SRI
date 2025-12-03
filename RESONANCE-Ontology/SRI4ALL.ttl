@@ -1,4 +1,4 @@
-@prefix : <https://w3id.org/resonance/sri4all#> .
+@prefix : <https://w3id.org/resonance/SRI4ALL#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace#> .
@@ -9,29 +9,27 @@
 @prefix s4ener: <https://saref.etsi.org/saref4ener/> .
 @prefix vann: <http://purl.org/vocab/vann#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix qudt: <http://qudt.org/schema/qudt/Unit#> .
-@prefix unit: <http://qudt.org/schema/qudt/Unit/>.
-@prefix sri4all: <https://w3id.org/resonance/sri4all#> .
-@prefix sri4building: <https://w3id.org/resonance/sri4building#> .
-@prefix sri4pv: <https://w3id.org/resonance/sri4pv#> .
-@prefix sri4ev: <https://w3id.org/resonance/sri4ev#> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
+@prefix sri4all: <https://w3id.org/resonance/SRI4ALL#> .
+@prefix sri4building: <https://w3id.org/resonance/SRI4BUILDING#> .
+@prefix sri4pv: <https://w3id.org/resonance/SRI4PV#> .
+@prefix sri4ev: <https://w3id.org/resonance/sri4EV#> .
 @prefix dcterms: <http://purl.org/dc/terms#> .
-@base <https://w3id.org/resonance/sri4all#> .
+@base <https://w3id.org/resonance/SRI4ALL#> .
 
-<https://w3id.org/resonance/sri4all#> rdf:type owl:Ontology ;
-                                      owl:versionIRI <https://w3id.org/resonance/sri4all-1.0#> ;
+<https://w3id.org/resonance/SRI4ALL#> rdf:type owl:Ontology ;
+                                      owl:versionIRI <https://w3id.org/resonance/SRI4ALL-1.0#> ;
                                       dcterms:created "2024-07-15"^^xsd:date ;
                                       dcterms:creator <https://www.resonance-project.eu/> , <https://www.linkedin.com/in/henon-lamboro/> ;
-                                      dcterms:issued "TBA"^^xsd:date ;
-                                      dcterms:license "TBA" ;
-                                      dcterms:modified "2025-02-26"^^xsd:date ;
-                                      dcterms:rights "TBA"@en ;
+                                      dcterms:issued "2025-07-15"^^xsd:date ;
+                                      dcterms:license "CC0-1.0" ;
+                                      dcterms:modified "2025-11-26"^^xsd:date ;
+                                      dcterms:rights "Copyright (c) RESONANCE Consortium"@en ;
                                       dcterms:title "Semantic Resource Interface For All Ontology"@en ;
-                                      dcterms:description: """ The SRI4All Ontology is a common ontology that provides entities and their relationships as
-                                                          a common semantic model for resources and services within the Semantic Resource Interface (SRI) architecture. It represents the 
-                                                          key concepts and relationships across various modules such as SRI4EV and SRI4Building. """@en ;
+                                      dcterms:description "The SRI4All Ontology is a common ontology that provides entities and their relationships as a common semantic model for resources and services within the Semantic Resource Interface (SRI) architecture. It represents the key concepts and relationships across various modules such as SRI4EV and SRI4Building. "@en ;
                                       vann:preferredNamespacePrefix "sri4all" ;
-                                      vann:preferredNamespaceUri <https://w3id.org/resonance/sri4all> ;
+                                      vann:preferredNamespaceUri <https://w3id.org/resonance/SRI4ALL> ;
                                       rdfs:label "sri4all Ontology"@en ;
                                       owl:versionInfo "v1.0" .
 
@@ -41,45 +39,45 @@
 
 s4ener:CommodityQuantity
   a owl:Class ;
-  rdfs:comment "The various commodity quantities introduced by the S2 standard." @en;
+  rdfs:comment "The various commodity quantities introduced by the S2 standard."@en;
   rdfs:label "Commodity Quantity"@en .
 
 sri4all:PowerMeasurement
     a owl:Class ;
-    rdfs:comment "Power measurement represents the measurement of electrical power at a given moment " @en;
+    rdfs:comment "Power measurement represents the measurement of electrical power at a given moment "@en;
     rdfs:label "Power Value"@en .
 
 sri4all:PowerProperty
     a owl:Class ;
-    rdfs:comment "Power property refers to the various forms of electrical power that can be quantified in a system. It can describe any of these forms of power (active, reactive, or apparent). " @en;
+    rdfs:comment "Power property refers to the various forms of electrical power that can be quantified in a system. It can describe any of these forms of power (active, reactive, or apparent). "@en;
     rdfs:label "Power Property"@en .
 
 sri4all:PowerDevice
     a owl:Class ;
-    rdfs:comment "Power Device refers to an electrical device used to measure, monitor, or control different forms of power in a system. Such as power meters or energy meters." @en ;
+    rdfs:comment "Power Device refers to an electrical device used to measure, monitor, or control different forms of power in a system. Such as power meters or energy meters."@en ;
     rdfs:label "Power Device"@en .
 
 sri4all:ActivePower
     a owl:Class ;
-    rdfs:comment "Active power is the actual power consumed by devices to perform work, measured in watts (W)" @en ;
+    rdfs:comment "Active power is the actual power consumed by devices to perform work, measured in watts (W)"@en ;
     sri4all:isMeasuredIn unit:KiloW ;
     rdfs:label "Active Power"@en .
 
 sri4all:ApparentPower
     a owl:Class ;
-    rdfs:comment "The total power supplied to the system, combining both active and reactive power, measured in volt-amperes (VA)." @en ;
+    rdfs:comment "The total power supplied to the system, combining both active and reactive power, measured in volt-amperes (VA)."@en ;
     sri4all:isMeasuredIn unit:KiloV-A ;
     rdfs:label "Apparent Power"@en .   
 
 sri4all:ReactivePower
     a owl:Class ;
-    rdfs:comment "The power that oscillates between the source and load without doing useful work, measured in volt-amperes reactive (VAR)." @en ;
+    rdfs:comment "The power that oscillates between the source and load without doing useful work, measured in volt-amperes reactive (VAR)."@en ;
     sri4all:isMeasuredIn unit:KiloV-A_Reactive ;
     rdfs:label "Reactive Power"@en .
 
 sri4all:FlexManager
     a owl:Class ;
-    rdfs:comment "An entity responsible for managing flexibility in energy consumption and generation, optimizing resource usage based on grid conditions and demand response strategies." @en ;
+    rdfs:comment "An entity responsible for managing flexibility in energy consumption and generation, optimizing resource usage based on grid conditions and demand response strategies."@en ;
     rdfs:label "Flex Manager"@en .
 
 sri4all:DemandResponseEvent rdf:type owl:Class ;
@@ -88,12 +86,12 @@ sri4all:DemandResponseEvent rdf:type owl:Class ;
 
 sri4all:ResourceManager
     a owl:Class ;
-    rdfs:comment "A system or entity responsible for overseeing and optimizing the allocation, utilization, and scheduling of energy resources within a smart grid or charging infrastructure." @en ;
+    rdfs:comment "A system or entity responsible for overseeing and optimizing the allocation, utilization, and scheduling of energy resources within a smart grid or charging infrastructure."@en ;
     rdfs:label "ResourceManager"@en .
 
 sri4all:Resource
     a owl:Class ;
-    rdfs:comment "A generic entity representing an asset within the energy system, such as energy storage, generation units, or flexible loads, that can be managed or optimized." @en ;
+    rdfs:comment "A generic entity representing an asset within the energy system, such as energy storage, generation units, or flexible loads, that can be managed or optimized."@en ;
     rdfs:label "Resource"@en .
 
 sri4building:Building rdf:type owl:Class ;
@@ -121,7 +119,7 @@ sri4all:timestamp rdf:type owl:DatatypeProperty ;
                  rdfs:label "timestamp"@en.
 
 sri4all:hasTechnicalContext rdf:type owl:DatatypeProperty ;
-                 rdfs:comment "This property indicates whether the power value pertains to production (e.g., PV production) or consumption. " ;  
+                 rdfs:comment "This property indicates whether the power value pertains to production (e.g., PV production) or consumption. "@en;  
                  rdfs:domain sri4all:PowerMeasurement;
                  rdfs:range xsd:string ;
                  rdfs:label "has technical context"@en.
@@ -214,6 +212,9 @@ sri4all:isTargetedOn rdf:type owl:ObjectProperty ;
                     rdfs:range sri4all:PowerDevice ;
                     rdfs:label "is targeted on"@en .
 
+sri4all:isMeasuredIn a owl:ObjectProperty ;
+    rdfs:label "is measured in"@en ;
+    rdfs:comment "Indicates the measurement unit associated with a quantity."@en .
 
 #################################################################
 #    Individuals
