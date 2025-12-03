@@ -1,4 +1,4 @@
-@prefix : <https://w3id.org/resonance/sri4ev#> .
+@prefix : <https://w3id.org/resonance/SRI4EV#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace#> .
@@ -8,21 +8,21 @@
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix vann: <http://purl.org/vocab/vann#> .
 @prefix voaf: <http://purl.org/vocommons/voaf#> .
-@prefix sri4ev: <https://w3id.org/resonance/sri4ev#> .
+@prefix sri4ev: <https://w3id.org/resonance/SRI4EV#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix dcterms: <http://purl.org/dc/terms#> .
-@base <https://w3id.org/resonance/sri4ev#> .
+@base <https://w3id.org/resonance/SRI4EV#> .
 
-<https://w3id.org/resonance/sri4ev#> rdf:type owl:Ontology ;
-                                      owl:versionIRI <https://w3id.org/resonance/sri4ev-1.0#> ;
+<https://w3id.org/resonance/SRI4EV#> rdf:type owl:Ontology ;
+                                      owl:versionIRI <https://w3id.org/resonance/SRI4EV-1.0#> ;
                                       dcterms:created "2024-07-15"^^xsd:date ;
                                       dcterms:creator <https://www.resonance-project.eu/> , <https://www.linkedin.com/in/henon-lamboro/>  ;
                                       dcterms:contributor <https://www.linkedin.com/in/ana%C3%AFs-walle-050baa159/> ;
                                       dcterms:contributor <https://www.linkedin.com/in/ahcene-dahmane-521755198/> ;
-                                      dcterms:issued "TBA"^^xsd:date ;
-                                      dcterms:license "TBA" ;
-                                      dcterms:modified "2025-02-26"^^xsd:date ;
-                                      dcterms:rights "TBA"@en ;
+                                      dcterms:issued "2025-07-15"^^xsd:date ;
+                                      dcterms:license "CC0-1.0" ;
+                                      dcterms:modified "2025-11-26"^^xsd:date ;
+                                      dcterms:rights "Copyright (c) RESONANCE Consortium"@en ;
                                       dcterms:title "Semantic Resource Interface For Electric Vehicle Ontology"@en ;
                                       dcterms:description: """This ontology models the Electric Vehicle ecosystem, including infrastructure, 
                                       operations, and related data. It defines entities like charging sessions, batteries, connectors, and supply equipments,
@@ -714,12 +714,12 @@ sri4ev:EnergyMeter rdf:type owl:Class ;
 
 ###  https://w3id.org/resonance/sri4ev#PowerMeasurmentsRequestCommand
 sri4ev:PowerMeasurmentsRequestCommand rdf:type owl:Class ;
-                                      rdfs:comment "A command sent to request real-time power measurement data from a charging station or energy meter." @en;
+                                      rdfs:comment "A command sent to request real-time power measurement data from a charging station or energy meter."@en;
                                       rdfs:subClassOf sri4ev:RequestCommand .
 
 ###  https://w3id.org/resonance/sri4ev#PowerMeasurmentsResponseCommand
 sri4ev:PowerMeasurmentsResponseCommand rdf:type owl:Class ;
-                                       rdfs:comment "A response command providing real-time power measurement data, including power levels, voltage, and current readings." @en;
+                                       rdfs:comment "A response command providing real-time power measurement data, including power levels, voltage, and current readings."@en;
                                        rdfs:subClassOf sri4ev:ResponseCommand .
 
 ###  https://w3id.org/resonance/sri4ev#PowerType
