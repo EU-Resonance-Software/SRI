@@ -14,7 +14,7 @@
 @prefix sri4all: <https://w3id.org/resonance/SRI4ALL#> .
 @prefix sri4building: <https://w3id.org/resonance/SRI4BUILDING#> .
 @prefix sri4pv: <https://w3id.org/resonance/SRI4PV#> .
-@prefix sri4ev: <https://w3id.org/resonance/sri4EV#> .
+@prefix sri4ev: <https://w3id.org/resonance/SRI4EV#> .
 @prefix dcterms: <http://purl.org/dc/terms#> .
 @base <https://w3id.org/resonance/SRI4ALL#> .
 
