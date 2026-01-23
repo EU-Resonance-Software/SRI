@@ -94,6 +94,19 @@ sri4all:Resource
     rdfs:comment "A generic entity representing an asset within the energy system, such as energy storage, generation units, or flexible loads, that can be managed or optimized."@en ;
     rdfs:label "Resource"@en .
 
+sri4all:FlowDirection
+    rdf:type owl:Class ;
+    owl:oneOf (
+        sri4all:production
+        sri4all:consumption
+    ) .
+
+### Individuals of FlowDirection
+sri4all:production
+    rdf:type sri4all:FlowDirection .
+
+sri4all:consumption
+    rdf:type sri4all:FlowDirection .
 sri4building:Building rdf:type owl:Class ;
           rdfs:subClassOf sri4all:Resource .
 sri4building:HeatPump rdf:type owl:Class ;
