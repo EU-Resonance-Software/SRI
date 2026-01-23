@@ -168,12 +168,6 @@ sri4building:hasValue rdf:type owl:DatatypeProperty ;
 ###  http://qudt.org/schema/qudt/Unit#Unit
 qudt:Unit rdf:type owl:Class .
 
-
-###  https://saref.etsi.org/core/Sensor
-saref:Sensor rdf:type owl:Class ;
-             rdfs:subClassOf sri4building:BuildingDevice .
-
-
 ###  https://saref.etsi.org/saref4ener/CommodityQuantity
 s4ener:CommodityQuantity rdf:type owl:Class .
 
