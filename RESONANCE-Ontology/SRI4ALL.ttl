@@ -45,7 +45,7 @@ s4ener:CommodityQuantity
 sri4all:PowerMeasurement
     a owl:Class ;
     rdfs:comment "Power measurement represents the measurement of electrical power at a given moment "@en;
-    rdfs:label "Power Value"@en .
+    rdfs:label "Power Measurement"@en .
 
 sri4all:PowerProperty
     a owl:Class ;
